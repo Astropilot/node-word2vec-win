@@ -1,17 +1,14 @@
 {
-  "name": "word2vec",
+  "name": "word2vec-win",
   "version": "1.1.5",
-  "description": "node.js interface to the Google word2vec tool",
+  "description": "node.js interface to the Google word2vec tool compiled for Windows x64",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha",
-    "postinstall": "make --directory=src",
-    "test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
-    "codecov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/codecov/coverage --report lcovonly -- -R spec && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Planeshifter/node-word2vec.git"
+    "url": "git+https://github.com/Astropilot/node-word2vec-win.git"
   },
   "keywords": [
     "text-analytics",
@@ -23,9 +20,9 @@
   },
   "license": "APA-2",
   "bugs": {
-    "url": "https://github.com/Planeshifter/node-word2vec/issues"
+    "url": "https://github.com/Astropilot/node-word2vec-win/issues"
   },
-  "homepage": "https://github.com/Planeshifter/node-word2vec",
+  "homepage": "https://github.com/Astropilot/node-word2vec-win",
   "dependencies": {
     "change-case": "^4.1.2",
     "charm": "^1.0.0",
@@ -34,8 +31,6 @@
   },
   "devDependencies": {
     "chai": "4.x.x",
-    "codecov.io": "^0.1.5",
-    "istanbul": "^0.4.5",
-    "mocha": "8.x.x"
+    "mocha": "9.x.x"
   }
 }
